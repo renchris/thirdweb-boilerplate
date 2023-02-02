@@ -8,11 +8,11 @@ import '../styles/globals.css'
 const activeChainId = ChainId.Mainnet
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ChakraProvider resetCSS theme={theme}>
-    <ThirdwebProvider desiredChainId={activeChainId}>
+  <ThirdwebProvider desiredChainId={activeChainId}>
+    <ChakraProvider resetCSS theme={theme}>
       <Component {...pageProps} />
-    </ThirdwebProvider>
-  </ChakraProvider>
+    </ChakraProvider>
+  </ThirdwebProvider>
 )
 
 export default MyApp
